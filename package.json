@@ -23,6 +23,8 @@
     "electron": "^29.1.0"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "electron-squirrel-startup": "^1.0.0",
     "update-electron-app": "^3.0.0"
   }
