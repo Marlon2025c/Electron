@@ -10,6 +10,8 @@ module.exports = {
     {
       name: '@electron-forge/maker-squirrel',
       config: {
+        authors: 'Marlon2025c',
+        description: "an electron test app",
         certificateFile: './cert.pfx',
         certificatePassword: process.env.CERTIFICATE_PASSWORD,
       }
@@ -49,8 +51,8 @@ module.exports = {
       name: '@electron-forge/publisher-github',
       config: {
         repository: {
-          owner: 'github-user-name',
-          name: 'github-repo-name'
+          owner: 'Marlon2025c',
+          name: 'Electron'
         },
         prerelease: false,
         draft: true
