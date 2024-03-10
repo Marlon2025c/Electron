@@ -16,12 +16,14 @@ const createWindow = () => {
   win.loadFile('src/html/index.html');
 
   // Afficher une popup au démarrage de l'application
-  dialog.showMessageBoxSync({
-    type: 'info',
-    title: 'Bienvenue !',
-    message: 'Merci d\'utiliser notre application !',
-    buttons: ['OK']
-  });
+  if(updateElectronApp){
+    dialog.showMessageBoxSync({
+      type: 'info',
+      title: 'Bienvenue !',
+      message: 'Merci d\'utiliser notre application !',
+      buttons: ['OK']
+    });
+  }
 };
 
 app.whenReady().then(() => {
