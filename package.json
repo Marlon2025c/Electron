@@ -1,8 +1,12 @@
 {
   "name": "electron",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "an electron test app",
-  "main": "main.js",
+  "main": "src/js/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Marlon2025c/Electron"
+  },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -20,12 +24,15 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.3.0",
     "@electron-forge/plugin-fuses": "^7.3.0",
     "@electron-forge/publisher-github": "^7.3.0",
-    "electron": "^29.1.0"
+    "electron": "^29.1.0",
+    "electron-builder": "^24.13.3",
+    "electron-builder-squirrel-windows": "^24.13.3"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^6.1.8",
     "update-electron-app": "^3.0.0"
   }
 }
