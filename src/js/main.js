@@ -7,12 +7,14 @@ updateElectronApp();
 const createWindow = () => {
   const win = new BrowserWindow({
     autoHideMenuBar: true,
+    icon: path.join(__dirname, 'icon.ico'),
     width: 800,
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
   });
+  console.log(icon);
   win.loadFile('src/html/index.html');
 
   // Afficher une popup au démarrage de l'application
